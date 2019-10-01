@@ -1,7 +1,13 @@
 package info.tjohander.elasticdemo.domain;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
+
+@Document(indexName="bank")
 public class Customer {
-    int accountNumber;
+
+    @Id
+    Integer accountNumber;
 
     int balance;
 
