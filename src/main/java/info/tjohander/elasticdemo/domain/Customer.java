@@ -7,7 +7,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 public class Customer {
 
     @Id
-    Integer accountNumber;
+    String accountNumber;
 
     int balance;
 
